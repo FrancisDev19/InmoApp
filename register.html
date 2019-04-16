@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InmoApp - Inicio de sesión</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- BULMA CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar is-fixed-top container" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item">Inicio</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Propiedades
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Apartamentos
+                            </a>
+                            <a class="navbar-item">
+                                Casas
+                            </a>
+                            <a class="navbar-item">
+                                Villas
+                            </a>
+                            <a class="navbar-item">
+                                Solares
+                            </a>
+                            <a class="navbar-item">
+                                Fincas
+                            </a>
+                            <a class="navbar-item">
+                                Naves
+                            </a>
+                            <a class="navbar-item">
+                                Locales comerciales
+                            </a>
+                            <a class="navbar-item">
+                                Oficinas
+                            </a>
+                            <a class="navbar-item">
+                                Edificios
+                            </a>
+                            <a class="navbar-item">
+                                Pethhouses
+                            </a>
+                            <a class="navbar-item">
+                                Negocios
+                            </a>
+                        </div>
+                    </div>
+                    <a href="Contact.html" class="navbar-item">Contacto</a>
+                    <a href="about.html" class="navbar-item">Sobre nosotros</a>
+                </div>
+                <div class="navbar-end">
+                    <a href="Login.html" class="navbar-item">Iniciar sesion</a>
+                    <a id="anuncio" class="navbar-item has-text-white has-background-info">Publicar anuncio</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="columns is-widescreen">
+                <div class="column is-two-fifths is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="title has-text-centered">Registrarse</h2>
+                            <form action="">
+                                <div class="field">
+                                    <label for="name" class="label">Nombre (s)</label>
+                                    <div class="control">
+                                        <input type="text" class="input" id="name" required>
+                                        <p class="help" id="nameHelp"></p>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="lastName" class="label">Apellido (s)</label>
+                                    <div class="control">
+                                        <input type="text" class="input" id="lastName" required>
+                                        <p class="help" id="lastNameHelp"></p>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="email" class="label">Correo Electronico</label>
+                                    <div class="control">
+                                        <input type="email" class="input" id="email" required>
+                                        <p class="help" id="emailHelp"></p>
+                                    </div>
+                                </div>
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label for="phone" class="label">Teléfonos</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" placeholder="Telefono" id="tel"
+                                                    required>
+                                                <p class="help" id="telHelp"></p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="field">
+                                            <div class="control">
+                                                <input class="input" type="text" placeholder="Celular" id="cell"
+                                                    required>
+                                                <p class="help" id="cellHelp"></p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <p class="control has-icons-left">
+                                        <span class="select is-fullwidth">
+                                            <select id="provincia" required>
+                                                <option value="" selected>Todas las provincias</option>
+                                                <option value="AZU">Azua</option>
+                                                <option value="BAH">Bahoruco</option>
+                                                <option value="BAR">Barahona</option>
+                                                <option value="DAJ">Dajabón</option>
+                                                <option value="DC">Distrito Nacional</option>
+                                                <option value="DUA">Duarte</option>
+                                                <option value="EP">Elias Piña</option>
+                                                <option value="ES">El Seibo</option>
+                                                <option value="ESP">Espaillat</option>
+                                                <option value="HMA">Hato Mayor</option>
+                                                <option value="HM">Hermanas Mirabal</option>
+                                                <option value="IND">Independencia</option>
+                                                <option value="LAlt">La Altagracia</option>
+                                                <option value="LR">La Romana</option>
+                                                <option value="LV">La Vega</option>
+                                                <option value="MTS">Maria Trinidad Sanchez</option>
+                                                <option value="MN">Monseñor Nouel</option>
+                                                <option value="MC">Monte Cristi</option>
+                                                <option value="MP">Monte Plata</option>
+                                                <option value="PED">Pedernales</option>
+                                                <option value="PER">Peravia</option>
+                                                <option value="PP">Puerto Plata</option>
+                                                <option value="Sam">Samaná</option>
+                                                <option value="SC">San Cristobal</option>
+                                                <option value="SJO">San José de Ocoa</option>
+                                                <option value="SJ">San Juan</option>
+                                                <option value="SPM">San Pedro de Macoris</option>
+                                                <option value="SR">Sanchez Ramirez</option>
+                                                <option value="SANT">Santiago</option>
+                                                <option value="SRO">Santiago Rodriguez</option>
+                                                <option value="SD">Santo Domingo</option>
+                                                <option value="VAL">Valverde</option>
+                                            </select>
+                                        </span>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-globe"></i>
+                                        </span>
+                                    </p>
+                                    <p class="help" id="provinciaHelp"></p>
+                                </div>
+                                <div class="field is-horizontal">
+                                    <div class="field-label is-normal">
+                                        <label for="pwd" class="label">Contraseña</label>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <input type="password" class="input" id="pwd">
+                                            <p class="help" id="pwdHelp"></p>
+                                        </div>
+                                        <div class="field-label is-normal">
+                                            <label for="pwd" class="label">Repetir</label>
+                                        </div>
+                                        <div class="field">
+                                            <input type="password" class="input" id="rep-pwd">
+                                            <p class="help" id="rep-pwdHelp"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <label for="#" class="label">Genero:</label>
+                                        <label class="radio">
+                                            <input type="radio" name="question">
+                                            Masculino
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="question">
+                                            Femenino
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="question">
+                                            Prefiero no especificarlo
+                                        </label>
+                                    </div>
+                                    <p class="help" id="generoHelp"></p>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <label class="checkbox">
+                                            <input type="checkbox" id="terminos">
+                                            Acepto los <a href="#">terminos y condiciones</a>
+                                        </label>
+                                        <p class="help" id="terminosHelp"></p>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <a href="" id="registro" class="button is-link is-fullwidth">Regístrate</a>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <p>¿Ya tienes una cuenta?<a href="Login.html"> Inicia sesión.</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6 is-hidden-touch">
+                    <div class="content">
+                        <p class="has-text-weight-semibold">&copy; Derechos reservados, InmoApp, S.R.L. </p>
+                        <p>El uso de este site implica la aceptación de nuestra política de privacidad y términos y
+                            condiciones de
+                            uso.</p>
+                        <p><a href="#">Condiciones de uso y privacidad</a> / <a href="#">Ir a la portada</a></p>
+                    </div>
+                </div>
+                <div class="column is-6 is-centered">
+                    <div class="content">
+                        <p class="has-text-weight-semibold">Siguenos!</p>
+                        <div class="redes-sociales">
+                            <figure class="image is-48x48">
+                                <a href="#"><img src="img/174834-social-media-logos/svg/036-facebook.svg" alt=""></a>
+                            </figure>
+                            <figure class="image is-48x48">
+                                <a href="#"><img src="img/174834-social-media-logos/svg/029-instagram.svg" alt=""></a>
+                            </figure>
+                            <figure class="image is-48x48">
+                                <a href="#"><img src="img/174834-social-media-logos/svg/008-twitter.svg" alt=""></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+        <!-- Modal contenido -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="section">
+                <figure class="image is-128x128 container">
+                    <img src="img/logo.png" alt="">
+                </figure>
+                <h1 class="title has-text-centered">Unete a la red de inmobiliaria numero 1 del país</h1>
+                <p class="subtitle has-text-centered">Publica todas tus propiedades totalmente gratis.</p>
+                <a href="register.html" class="button is-link is-fullwidth">Registrate ya!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

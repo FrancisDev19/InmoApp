@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InmoApp - Inicio de sesión</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!-- BULMA CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar is-fixed-top container" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+                <div class="navbar-start">
+                    <a href="index.html" class="navbar-item">Inicio</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Propiedades
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Apartamentos
+                            </a>
+                            <a class="navbar-item">
+                                Casas
+                            </a>
+                            <a class="navbar-item">
+                                Villas
+                            </a>
+                            <a class="navbar-item">
+                                Solares
+                            </a>
+                            <a class="navbar-item">
+                                Fincas
+                            </a>
+                            <a class="navbar-item">
+                                Naves
+                            </a>
+                            <a class="navbar-item">
+                                Locales comerciales
+                            </a>
+                            <a class="navbar-item">
+                                Oficinas
+                            </a>
+                            <a class="navbar-item">
+                                Edificios
+                            </a>
+                            <a class="navbar-item">
+                                Pethhouses
+                            </a>
+                            <a class="navbar-item">
+                                Negocios
+                            </a>
+                        </div>
+                    </div>
+                    <a href="Contact.html" class="navbar-item">Contacto</a>
+                    <a href="about.html" class="navbar-item">Sobre nosotros</a>
+                </div>
+                <div class="navbar-end">
+                    <a href="Login.html" class="navbar-item">Iniciar sesion</a>
+                    <a id="anuncio" class="navbar-item has-text-white has-background-info">Publicar anuncio</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section">
+            
+            <div class="columns">
+                <div class="column is-two-fifths is-offset-one-third">
+                    <div class="card">
+                        <div class="card-content">
+                            <figure class="image is-128x128 container">
+                                <img src="img/logo.png" alt="" class="is-rounded">
+                            </figure>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6 is-hidden-touch">
+                    <div class="content">
+                        <p class="has-text-weight-semibold">&copy; Derechos reservados, InmoApp, S.R.L. </p>
+                        <p>El uso de este site implica la aceptación de nuestra política de privacidad y términos y
+                            condiciones de
+                            uso.</p>
+                        <p><a href="#">Condiciones de uso y privacidad</a> / <a href="#">Ir a la portada</a></p>
+                    </div>
+                </div>
+                <div class="column is-6 is-centered">
+                    <div class="content">
+                        <p class="has-text-weight-semibold">Siguenos!</p>
+                        <div class="redes-sociales">
+                            <figure class="image is-48x48">
+                                <a href="#"><img src="img/174834-social-media-logos/svg/036-facebook.svg" alt=""></a>
+                            </figure>
+                            <figure class="image is-48x48">
+                                <a href="#"><img src="img/174834-social-media-logos/svg/029-instagram.svg" alt=""></a>
+                            </figure>
+                            <figure class="image is-48x48">
+                                <a href="#"><img src="img/174834-social-media-logos/svg/008-twitter.svg" alt=""></a>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+        <!-- Modal contenido -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="section">
+                <figure class="image is-128x128 container">
+                    <img src="img/logo.png" alt="">
+                </figure>
+                <h1 class="title has-text-centered">Unete a la red de inmobiliaria numero 1 del país</h1>
+                <p class="subtitle has-text-centered">Publica todas tus propiedades totalmente gratis.</p>
+                <a href="register.html" class="button is-link is-fullwidth">Registrate ya!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

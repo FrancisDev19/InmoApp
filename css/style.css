@@ -1,0 +1,30 @@
+* {
+    transition: all 700ms ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: url('/img/bg.jpg');
+    background-clip: cover;
+    background-position: center 0;
+}
+
+.redes-sociales figure {
+    display: inline-block;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-shrink: 0;
+}
