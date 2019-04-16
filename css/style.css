@@ -6,7 +6,7 @@
 }
 
 html {
-    background: url('/img/bg.jpg');
+    background: url('img/bg.jpg');
     background-clip: cover;
     background-position: center 0;
 }

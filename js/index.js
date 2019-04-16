@@ -31,12 +31,12 @@ var images = [];
 var time = 3000;
 
 // Image list
-images[0] = '/img/carrousel/carrousel (1).jpeg';
-images[1] = '/img/carrousel/carrousel (2).jpeg';
-images[2] = '/img/carrousel/carrousel (3).jpeg';
-images[3] = '/img/carrousel/carrousel (4).jpeg';
-images[4] = '/img/carrousel/carrousel (5).jpeg';
-images[5] = '/img/carrousel/carrousel (6).jpeg';
+images[0] = 'img/carrousel/carrousel (1).jpeg';
+images[1] = 'img/carrousel/carrousel (2).jpeg';
+images[2] = 'img/carrousel/carrousel (3).jpeg';
+images[3] = 'img/carrousel/carrousel (4).jpeg';
+images[4] = 'img/carrousel/carrousel (5).jpeg';
+images[5] = 'img/carrousel/carrousel (6).jpeg';
 
 // Change image
 changeImg = () => {
